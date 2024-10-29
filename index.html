@@ -1,157 +1,58 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salesforce Sidekicks</title>
-    <style>
-        :root {
-            --primary-blue: #87CEEB;
-            --dark-blue: #2A4B8D;
-            --brown: #8B4513;
-            --text-dark: #333;
-            --bg-light: #f5f5f5;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        nav {
-            background-color: var(--dark-blue);
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.3s;
-        }
-
-        nav a:hover {
-            opacity: 0.8;
-        }
-
-        .hero {
-            background-color: var(--primary-blue);
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .hero img {
-            max-width: 600px;
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin: 2rem 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .section {
-            margin: 4rem 0;
-            padding: 2rem;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .section h2 {
-            color: var(--dark-blue);
-            margin-bottom: 1rem;
-        }
-
-        .subscribe-frame {
-            width: 100%;
-            height: 500px;
-            border: none;
-            background: white;
-            margin: 2rem 0;
-        }
-
-        footer {
-            background-color: var(--dark-blue);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-
-        .social-links {
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salesforce Sidekicks</title>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+  <header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="survey.html">Salary Survey</a></li>
-            <li><a href="meme.html">Meme</a></li>
-            <li><a href="about.html">Chi Siamo</a></li>
-            <li><a href="contatti.html">Contatti</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Salary Survey ITALIA</a></li>
+        <li><a href="#">Memes</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contatti</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div class="hero">
-        <h1>Salesforce Sidekicks</h1>
-        <img src="logo.png" alt="Salesforce Sidekicks" style="height: 550px">
-    </div>
+  <main>
+    <section class="hero">
+      <img src="logo.png" alt="Salesforce Sidekicks">
+      <h1>Benvenuti in Salesforce Sidekicks</h1>
+      <p>Esplora il mondo di Salesforce con noi!</p>
+    </section>
 
-    <div class="container">
-        <section class="section">
-            <h2>Benvenuti nel Podcast Salesforce Sidekicks</h2>
-            <p>Il tuo podcast italiano dedicato al mondo Salesforce, dove condividiamo esperienze, consigli e novità dall'ecosistema Salesforce.</p>
-        </section>
+    <section class="podcast">
+      <h2>Il Podcast di Salesforce Sidekicks</h2>
+      <p>Scopri le ultime notizie e tendenze nel mondo di Salesforce.</p>
+      <!-- Add podcast player or content here -->
+    </section>
 
-        <section class="section">
-            <h2>Ultimi Episodi</h2>
-            <p>Scopri i nostri ultimi episodi del podcast dedicati alle novità e alle best practice di Salesforce.</p>
-        </section>
+    <section class="salary-survey">
+      <h2>Salesforce Salary Survey ITALIA</h2>
+      <p>Partecipa alla nostra indagine sui salari dei professionisti Salesforce in Italia.</p>
+      <a href="#" class="btn">Partecipa Ora</a>
+    </section>
 
-        <section class="section">
-            <h2>Iscriviti alla Newsletter</h2>
-            <iframe src="https://salesforcesideckicks.gumroad.com/" class="subscribe-frame" style="height:350px;" scrolling="no"></iframe>
-        </section>
-    </div>
+    <section class="memes">
+      <h2>Salesforce Memes</h2>
+      <p>Divertiti con i migliori meme sul mondo Salesforce.</p>
+      <!-- Add meme gallery here -->
+    </section>
 
-    <footer>
-        <p>© 2024 Sidekicks Media. Tutti i diritti riservati.</p>
-        <div class="social-links">
-            <a href="#">LinkedIn</a>
-            <a href="#">Spotify</a>
-            <a href="#">Apple Podcast</a>
-        </div>
-    </footer>
+    <section class="subscribe">
+      <h2>Iscriviti</h2>
+      <p>Rimani aggiornato sulle ultime notizie e iniziative.</p>
+      <iframe src="https://salesforcesideckicks.gumroad.com" frameborder="0"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Salesforce Sidekicks. Tutti i diritti riservati.</p>
+  </footer>
 </body>
 </html>
