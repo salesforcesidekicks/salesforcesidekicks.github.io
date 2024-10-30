@@ -9,6 +9,13 @@
   gtag('js', new Date());
 
   gtag('config', 'G-WXP9Z813YG');
+
+  var showSurvey = function(btn){
+    var iframe = document.getElementById('frmSurvey');
+    iframe.style.display = "block";
+    iframe.src += '';
+    btn.style.display = "none";
+  }
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +45,10 @@
                 <strong>Tutte le risposte sono anonime</strong> e la tua email non verrà trasmessa a Google Form.<br/>
                 I risultati saranno condivisi con la community, fai subscribe nella nostra mailing list per sapere quando verranno pubblicati!
             </p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd852YDVgxKf4dcXt2fsIuJa00CD-dVaBxMgi4QvHxxVLVb9Q/viewform?embedded=true" width="800" height="2998" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div style="text-align: center">
+                <a href="#" class="btn" onclick="showSurvey(this);">Avvia la survey</a>
+            </div>
+            <iframe id="frmSurvey" src="https://docs.google.com/forms/d/e/1FAIpQLSd852YDVgxKf4dcXt2fsIuJa00CD-dVaBxMgi4QvHxxVLVb9Q/viewform?embedded=true" width="800" height="2998" frameborder="0" marginheight="0" marginwidth="0" style="display:none">Loading…</iframe>
 
         </main>
 
