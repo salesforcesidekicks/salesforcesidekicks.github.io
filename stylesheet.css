@@ -1,69 +1,182 @@
 /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  text-decoration: none;
-  color: #007bff;
+    text-decoration: none;
+    color: #007bff;
 }
 
 /* Header and Navigation */
 header {
-  background-color: #0072C6;
-  padding: 1rem;
+    background-color: #0072C6;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
 }
 
 nav li {
-  margin: 0 1rem;
+    margin: 0 1rem;
 }
 
 nav a {
-  color: #fff;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-/* Main Content Sections */
+nav a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Main Content Sections - Home Page */
 .hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background-color: #f1f1f1;
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f1f1f1;
 }
 
 .hero img {
-  max-width: 300px;
-  margin-bottom: 1rem;
+    max-width: 300px;
+    margin-bottom: 1rem;
 }
 
 .podcast, .salary-survey, .memes, .subscribe {
-  padding: 2rem 1rem;
-  text-align: center;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
 .btn {
-  display: inline-block;
-  background-color: #0072C6;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  margin-top: 1rem;
+    display: inline-block;
+    background-color: #0072C6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005799;
+}
+
+/* Layout Container - Survey Page */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 2rem;
+}
+
+/* Main Content Styles - Survey Page */
+.main-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.survey-title {
+    color: #0072C6;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.survey-description {
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.survey-iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+    background: #f9f9f9;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar-section {
+    margin-bottom: 2rem;
+}
+
+.sidebar-title {
+    color: #0072C6;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #0072C6;
+}
+
+.sidebar-content {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.subscribe-iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    background: #fff;
 }
 
 /* Footer */
 footer {
-  background-color: #0072C6;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
+    background-color: #0072C6;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+footer a{
+    color:white;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
 }
