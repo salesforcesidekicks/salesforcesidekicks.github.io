@@ -42,14 +42,17 @@
                 Partecipa al nostro sondaggio annuale sui salari dei professionisti Salesforce in Italia. <br/>
                 Il tuo contributo ci aiuterà a creare una panoramica completa del mercato del lavoro 
                 Salesforce nel nostro paese. <br/>
-                <strong>Tutte le risposte sono anonime</strong> e la tua email non verrà trasmessa a Google Form.<br/>
-                I risultati saranno condivisi con la community, fai subscribe nella nostra mailing list per sapere quando verranno pubblicati!
+                <!--<strong>Tutte le risposte sono anonime</strong> e la tua email non verrà trasmessa a Google Form.<br/>
+                I risultati saranno condivisi con la community, fai subscribe nella nostra mailing list per sapere quando verranno pubblicati!-->
             </p>
             <div style="text-align: center">
                 <a href="#" class="btn" onclick="showSurvey(this);">Avvia la survey</a>
             </div>
-            <iframe id="frmSurvey" src="https://docs.google.com/forms/d/e/1FAIpQLSd852YDVgxKf4dcXt2fsIuJa00CD-dVaBxMgi4QvHxxVLVb9Q/viewform?embedded=true" width="800" height="2998" frameborder="0" marginheight="0" marginwidth="0" style="display:none">Loading…</iframe>
-
+            <div style="text-align: center; display:none" id="frmSurvey">
+                <a class="btn" href="https://forms.gle/atfPqd3wRWdesBmr9" target="_blank">Apri su altro tab</a>
+                <iframe onload="window.parent.scrollTo(0,0);" src="https://docs.google.com/forms/d/e/1FAIpQLSd852YDVgxKf4dcXt2fsIuJa00CD-dVaBxMgi4QvHxxVLVb9Q/viewform?embedded=true" 
+                    width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
         </main>
 
         <!-- Sidebar -->
