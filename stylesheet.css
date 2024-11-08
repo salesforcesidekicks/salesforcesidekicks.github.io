@@ -83,6 +83,12 @@ nav a.active {
     transition: background-color 0.3s;
 }
 
+.btn-small {
+    margin-top: 0rem;
+    font-size: small;
+    height: 2rem;
+}
+
 .btn:hover {
     background-color: #005799;
 }
