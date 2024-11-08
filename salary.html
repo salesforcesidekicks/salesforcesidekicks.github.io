@@ -18,6 +18,10 @@
 
     var descrDiv = document.getElementById('surveyDescr');
     descrDiv.style.display = "none";
+
+    var surveyTitle = document.getElementById('surveyTitle');
+    surveyTitle.style.display = "none";
+    
   }
 </script>
     <meta charset="UTF-8">
@@ -40,7 +44,7 @@
     <div class="container">
         <!-- Main Content -->
         <main class="main-content">
-            <h1 class="survey-title">Salesforce Salary Survey ITALIA</h1>
+            <h1 class="survey-title"  id="surveyTitle">Salesforce Salary Survey ITALIA</h1>
             <div class="survey-description" id="surveyDescr">
                 Partecipa al nostro sondaggio annuale sui salari dei professionisti Salesforce in Italia.
                 <div style="text-align: center;">
